@@ -15,7 +15,7 @@ class _DashbordPageState extends State<DashbordPage> {
         Container(
           padding: const EdgeInsets.all(10),
           height: 50,
-          color: Colors.green,
+          color: Color.fromARGB(255, 38, 50, 56),
           child: Row(
             children: [
               FlutterLogo(size: 50),
