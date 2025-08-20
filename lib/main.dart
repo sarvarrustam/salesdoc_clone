@@ -39,7 +39,7 @@ class AppContainer extends StatelessWidget {
           Widget currentPage;
           switch (state.activePage) {
             case 'Dashboard':
-              currentPage = const DashboardPage();
+              currentPage = const DashbordPage();
               break;
             case 'Documents':
               // Bu yerga Documents sahifasi keladi
@@ -51,13 +51,13 @@ class AppContainer extends StatelessWidget {
               {}
               break;
             default:
-              currentPage = const DashboardPage();
+              currentPage = const DashbordPage();
               break;
           }
           // AppLayout widgetini qaytaramiz va unga o'zgaruvchan kontentni beramiz
           return AppLayout(content: currentPage);
         }
-        return const AppLayout(content: DashboardPage());
+        return const AppLayout(content: DashbordPage());
       },
     );
   }
